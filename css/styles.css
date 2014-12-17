@@ -29,25 +29,35 @@ footer, header, main, hgroup, menu, nav, section {
 /* Colors */
 .white { background-color: #fff !important; }
 .black { background-color: #000 !important; }
+.light { color: #fff !important; }
+.dark { color: #222 !important; }
+
 .gray { background-color: #777 !important; }
 .light_gray { background-color: #AAA !important; }
 .dark_gray { background-color: #444 !important; }
 
 .blue { background-color: #1195AA !important; }
+.blue_fg { color: #1195AA !important; }
+.blue_a a { color: #1195AA !important; }
+
 .light_blue { background-color: #16C2DD !important; }
 .dark_blue { background-color: #1B3E44 !important; }
 
 .green { background-color: #00AA63 !important; }
+.green_fg { color: #00AA63 !important; }
+.green_a a { color: #00AA63 !important; }
+
 .light_green { background-color: #00F690 !important; }
 .dark_green { background-color: #007745 !important; }
 
-
 .red { background-color: #F62319 !important; }
+.red_fg { color: #F62319 !important; }
+.red_a a { color: #F62319 !important; }
+
 .light_red { background-color: #F76A63 !important; }
 .dark_red { background-color: #AA1A00 !important; }
 
-.light { color: #fff !important; }
-.dark { color: #222 !important; }
+.light_border_bottom { border-bottom: 1px solid rgba(51,51,51, 0.25); }
 
 /* The Basics */
 *, *:before, *:after {
@@ -94,13 +104,16 @@ table {
 }
 
 nav {
-    border-bottom: 1px solid rgba(51,51,51, 0.25);
-	background-color: #fff;
+
 }
 
 nav a {
 	text-decoration: none;
-	color: #00aa63;
+}
+
+.main_nav {
+	overflow: hidden;
+	float: left;
 }
 
 .container {
@@ -113,6 +126,10 @@ nav a {
 	width: 100%;
 	overflow: auto;
 	zoom: 1;
+}
+
+.wrapper {
+	overflow: hidden;
 }
 
 .container:before,
@@ -213,6 +230,23 @@ ul li {
 	margin-right: 20px;
 }
 
+hr {
+	border: none;
+	border-bottom: 1px solid rgba(68,68,68,0.25);
+	clear: both;
+	margin: 20px 0 19px 0;
+	width: 100%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+/*Lists*/
 .vlist li {
 	padding: 0.618rem 0;
 	display: block;
@@ -240,23 +274,6 @@ ul li {
 .fvlist li:last-child {
 	border-radius: 0px 0px 5px 5px;
 	border-bottom: 1px solid #777;
-}
-
-
-hr {
-	border: none;
-	border-bottom: 1px solid rgba(68,68,68,0.25);
-	clear: both;
-	margin: 20px 0 19px 0;
-	width: 100%;
-}
-
-.pull-left {
-	float: left;
-}
-
-.pull-right {
-	float: right;
 }
 
 /* Forms */
@@ -337,12 +354,27 @@ button, .button, input[type=submit] {
 	padding-left: 30px;
 }
 
+/*Images*/
+.framed {
+	border-radius: 3px;
+	padding: 2px;
+	border: 1px solid rgba(51,51,51, 0.25);
+}
+
+img.small {
+	max-width: 150px;
+	max-height:150px;
+}
+
 /* Demo CSS */
 .headerDemo {
 	margin-top: 0 !important;
 }
 
-.colorDemo p {
+.colorDemo span {
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
 	font-weight: bold;
 	border: 1px solid #AAA;
 	padding: 0.5rem;

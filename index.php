@@ -18,18 +18,22 @@
 				</div>
 			</div>
 		</header>
-		<nav>
+		<div class="wrapper light_border_bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 pull-right">
-						%nav%
+						<nav class="main_nav">
+							%nav%
+						</nav>
 						%login%
 					</div>
 				</div>
 			</div>
-		</nav>
-		<div class="container">
-			%content%
+		</div>
+		<div class="wrapper">
+			<div class="container">
+				%content%
+			</div>
 		</div>
 		<footer>
 			<div class="container">
