@@ -18,7 +18,7 @@
 				</div>
 			</div>
 		</header>
-		<div class="wrapper light_border_bottom">
+		<div class="wrapper light_bb">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 pull-right">

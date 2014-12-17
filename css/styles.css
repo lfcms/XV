@@ -31,6 +31,8 @@ footer, header, main, hgroup, menu, nav, section {
 .black { background-color: #000 !important; }
 .light { color: #fff !important; }
 .dark { color: #222 !important; }
+.light_bb { border-bottom: 1px solid rgba(51,51,51, 0.25) !important; }
+.dark_bb{ border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important; }
 
 .gray { background-color: #777 !important; }
 .light_gray { background-color: #AAA !important; }
@@ -39,6 +41,7 @@ footer, header, main, hgroup, menu, nav, section {
 .blue { background-color: #1195AA !important; }
 .blue_fg { color: #1195AA !important; }
 .blue_a a { color: #1195AA !important; }
+.blue_bb{ border-bottom: 1px solid rgba(17, 149, 170, 0.25) !important; }
 
 .light_blue { background-color: #16C2DD !important; }
 .dark_blue { background-color: #1B3E44 !important; }
@@ -46,6 +49,7 @@ footer, header, main, hgroup, menu, nav, section {
 .green { background-color: #00AA63 !important; }
 .green_fg { color: #00AA63 !important; }
 .green_a a { color: #00AA63 !important; }
+.green_bb { border-bottom: 1px solid rgba(0, 170, 99, 0.25) !important; }
 
 .light_green { background-color: #00F690 !important; }
 .dark_green { background-color: #007745 !important; }
@@ -53,11 +57,10 @@ footer, header, main, hgroup, menu, nav, section {
 .red { background-color: #F62319 !important; }
 .red_fg { color: #F62319 !important; }
 .red_a a { color: #F62319 !important; }
+.red_bb { border-bottom: 1px solid rgba(246, 35, 25, 0.25) !important; }
 
 .light_red { background-color: #F76A63 !important; }
 .dark_red { background-color: #AA1A00 !important; }
-
-.light_border_bottom { border-bottom: 1px solid rgba(51,51,51, 0.25); }
 
 /* The Basics */
 *, *:before, *:after {
@@ -109,11 +112,6 @@ nav {
 
 nav a {
 	text-decoration: none;
-}
-
-.main_nav {
-	overflow: hidden;
-	float: left;
 }
 
 .container {
@@ -246,8 +244,13 @@ hr {
 	float: right;
 }
 
-/*Lists*/
-.vlist li {
+/*Lists and Navigation*/
+.hlist {
+	float: left;
+	overflow: hidden;
+}
+
+.vlist li{
 	padding: 0.618rem 0;
 	display: block;
 	width: 100%;
@@ -274,6 +277,29 @@ hr {
 .fvlist li:last-child {
 	border-radius: 0px 0px 5px 5px;
 	border-bottom: 1px solid #777;
+}
+.efvlist li {
+	padding: 0.618rem;
+	display: block;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	border-top: 1px solid #AAA;
+	border-left: 3px solid #AAA;
+	border-right: 1px solid #AAA;
+}
+
+.efvlist li:first-child {
+	border-radius: 5px 5px 0px 0px;
+}
+
+.efvlist li:last-child {
+	border-radius: 0px 0px 5px 5px;
+	border-bottom: 1px solid #777;
+}
+
+.efvlist li:hover {
+	border-left-color: #1195AA;
 }
 
 /* Forms */
