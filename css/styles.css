@@ -122,7 +122,7 @@ nav a {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
 	zoom: 1;
 }
 
@@ -215,6 +215,8 @@ a {
 }
 
 code {
+	overflow: auto;
+	display: block;
 	font-family: Courier, monospace;
 	padding: 5px 10px;
 	border: 1px solid rgba(0, 0, 0, 0.25);
@@ -249,6 +251,10 @@ hr {
 
 .pull-right {
 	float: right;
+}
+
+.sidebar {
+	padding-left: 30px;
 }
 
 /*Lists and Navigation*/
@@ -331,7 +337,7 @@ hr {
     border-radius: 0px 0px 5px 5px;   
 }
 
-/* Forms */
+/* Forms and Login */
 input[type=text],
 input[type=url],
 input[type=tel],
@@ -379,14 +385,8 @@ select:focus {
 	outline: 0;
 }
 
-/*select:focus {
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
-	box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
-	border: #1195AA 1px solid;
-	outline: 0;
-}*/
-
 button, .button, input[type=submit] {
+	overflow: hidden;
 	border: none;
     border-radius: 4px;
     color: white;
@@ -405,21 +405,30 @@ button, .button, input[type=submit] {
 	background-color: #00aa63;
 }
 
-#_auth {
+#auth_lf {
 	float: right;
 }
 
-._auth_loggedin {
-    padding: 1.618rem 0;
+#auth_lf .auth_welcome {
+    margin: 1.618rem 0;
 
 }
 
-._auth_loggedin a  {
+#auth_lf .auth_welcome a  {
 	margin-left: 20px;
 }
 
-.sidebar {
-	padding-left: 30px;
+#auth_lf .auth_login {
+    margin: 18px 0 10px 0;
+    overflow: auto;
+    display: block;
+	
+}
+
+#auth_lf .auth_login a {
+    margin-top: 7px;
+
+    display: block;
 }
 
 /*Images*/
