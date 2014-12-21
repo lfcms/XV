@@ -20,14 +20,10 @@
 		</header>
 		<div class="wrapper light_bb">
 			<div class="container">
-				<div class="row">
-					<div class="col-12 pull-right">
-						<nav class="main_nav">
-							%nav%
-						</nav>
-						%login%
-					</div>
-				</div>
+				<nav class="main_nav">
+					%nav%
+				</nav>
+				%login%
 			</div>
 		</div>
 		<div class="wrapper">
@@ -39,7 +35,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						Powered by &copy<a href="http://littlefootcms.com">LittlefootCMS</a>
+						<span>
+							Powered by &copy<a href="http://littlefootcms.com">LittlefootCMS</a>
+						</span>
 					<div>
 				</div>
 			</div>

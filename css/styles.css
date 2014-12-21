@@ -214,6 +214,13 @@ a {
 	color: #1195AA;
 }
 
+code {
+	font-family: Courier, monospace;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	background-color: rgba(51,51,51, 0.25);
+}
+
 .text-center {
 	text-align: center;
 }
@@ -223,9 +230,9 @@ small, .font_small {
 }
 
 ul li {
+	margin-right: 20px;
 	display: inline;
 	float: left;
-	margin-right: 20px;
 }
 
 hr {
@@ -245,6 +252,26 @@ hr {
 }
 
 /*Lists and Navigation*/
+.main_nav {
+    float: left;
+    overflow: hidden;
+	
+}
+
+.main_nav li {
+	margin-right: 0;
+}
+
+.main_nav li.active{
+
+}
+
+.main_nav li a {
+    display: block;
+    padding: 1.618rem;
+	
+}
+
 .hlist {
 	float: left;
 	overflow: hidden;
@@ -270,12 +297,7 @@ hr {
 	border-right: 1px solid #AAA;
 }
 
-.fvlist li:first-child {
-	border-radius: 5px 5px 0px 0px;
-}
-
 .fvlist li:last-child {
-	border-radius: 0px 0px 5px 5px;
 	border-bottom: 1px solid #777;
 }
 .efvlist li {
@@ -289,17 +311,24 @@ hr {
 	border-right: 1px solid #AAA;
 }
 
-.efvlist li:first-child {
-	border-radius: 5px 5px 0px 0px;
-}
-
 .efvlist li:last-child {
-	border-radius: 0px 0px 5px 5px;
 	border-bottom: 1px solid #777;
 }
 
 .efvlist li:hover {
 	border-left-color: #1195AA;
+}
+
+.rounded {
+	border-radius: 5px;
+}
+
+.rounded li:first-child {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.rounded li:last-child {
+    border-radius: 0px 0px 5px 5px;   
 }
 
 /* Forms */
@@ -335,19 +364,27 @@ select {
 	appearance: none;
 }
 
-input[type=text]:focus {
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
-	box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
-	border: #1195AA 1px solid;
-	outline: 0;
-}
-
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=color]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=date]:focus,
 select:focus {
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
 	box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
 	border: #1195AA 1px solid;
 	outline: 0;
 }
+
+/*select:focus {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
+	box-shadow: 0px 0px 10px 0px rgba(17, 149, 170, 0.35);
+	border: #1195AA 1px solid;
+	outline: 0;
+}*/
 
 button, .button, input[type=submit] {
 	border: none;
@@ -370,6 +407,11 @@ button, .button, input[type=submit] {
 
 #_auth {
 	float: right;
+}
+
+._auth_loggedin {
+    padding: 1.618rem 0;
+
 }
 
 ._auth_loggedin a  {
