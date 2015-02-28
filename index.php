@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="lf" lang="en">
     <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=1" name="viewport">
 		<title>%title%</title>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="%skinbase%/css/styles.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="%skinbase%/css/custom.css" />
 	</head>
 	<body>
 		<header class="dark_gray banner light text-center">
 			<div class="container">
-				<h1>Fresh CSS</h1>
+				<h1>WightDev</h1>
 				<div class="row">
 					<div class="col-4"></div>
 					<div class="col-4">
