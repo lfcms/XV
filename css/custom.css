@@ -1,0 +1,28 @@
+/*Custom - Demo */
+.lf .headerDemo {
+	margin-top: 0 !important;
+}
+
+.lf .colorDemo span {
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	border: 1px solid #AAA;
+	padding: 0.5rem;
+}
+
+.lf .buttonDemo li {
+	width: 100%;
+	margin-bottom: 1.414rem;
+}
+
+.lf .columnDemo span {
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	border: 1px solid #AAA;
+	padding: 0.5rem;
+	text-align: center;
+}
