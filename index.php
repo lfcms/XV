@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="lf" lang="en">
     <head>
-		<meta charset="utf-8">
+    	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=1" name="viewport">
 		<title>%title%</title>
@@ -11,7 +11,7 @@
 	<body>
 		<header class="dark_gray banner light text-center">
 			<div class="container">
-				<h1>WightDev</h1>
+				<h1>Littlefoot</h1>
 				<div class="row">
 					<div class="col-4"></div>
 					<div class="col-4">
