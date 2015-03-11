@@ -23,7 +23,7 @@
 		</header>
 		<div class="wrapper light_bb">
 			<div class="container">
-				<nav class="main_nav">
+				<nav class="main_nav green_a">
 					%nav%
 				</nav>
 			</div>
