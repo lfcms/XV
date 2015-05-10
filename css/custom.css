@@ -1,3 +1,14 @@
+/*Custom*/
+
+.lf {
+    font-weight: 300;   
+}
+
+.lf p,
+.lf nav {
+    font-weight: 400;   
+}
+
 /*Custom - Demo */
 .lf .headerDemo {
 	margin-top: 0 !important;
@@ -8,8 +19,8 @@
 	display: block;
 	width: 100%;
 	font-weight: bold;
-	border: 1px solid #AAA;
-	padding: 0.5rem;
+	padding: 1rem;
+    border-radius: 5px;
 }
 
 .lf .buttonDemo li {
