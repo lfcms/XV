@@ -16,8 +16,8 @@
 					<div class="col-6">
                         <h1 class="no_mar">
                             <span class="hidden">Littlefoot</span>
-                            <a href="http://littlefootcms.com/">
-                                <img src="%relbase%lf/system/template/images/lf-banner.png"/>    
+                            <a href="%baseurl%">
+                                <img src="%relbase%lf/system/template/images/lf-banner.png"/>
                             </a>
                         </h1>
 					</div>
