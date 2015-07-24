@@ -42,7 +42,7 @@
 				<div class="row">
 					<div class="col-12">
 						<span>
-							Powered by &copy<a href="http://littlefootcms.com" target="blank_">LittlefootCMS</a>
+							Powered by &copy<a href="http://littlefootcms.com" target="_blank">LittlefootCMS</a>
 						</span>
 					<div>
 				</div>
