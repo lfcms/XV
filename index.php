@@ -11,13 +11,17 @@
 	<body>
 		<header class="banner blue light text-center">
 			<div class="container">
-				<h1>Littlefoot</h1>
 				<div class="row">
-					<div class="col-4"></div>
-					<div class="col-4">
-						<a class="white button green_fg" href="http://littlefootcms.com/files/download/littlefoot.zip" id="download_littlefoot"><i class="fa fa-download"></i> Download LittlefootCMS</a>
+					<div class="col-3"></div>
+					<div class="col-6">
+                        <h1 class="no_mar">
+                            <span class="hidden">Littlefoot</span>
+                            <a href="http://littlefootcms.com/">
+                                <img src="%relbase%lf/system/template/images/lf-banner.png"/>    
+                            </a>
+                        </h1>
 					</div>
-					<div class="col-4"></div>
+					<div class="col-3"></div>
 				</div>
 			</div>
 		</header>
@@ -38,7 +42,7 @@
 				<div class="row">
 					<div class="col-12">
 						<span>
-							Powered by &copy<a href="http://littlefootcms.com">LittlefootCMS</a>
+							Powered by &copy<a href="http://littlefootcms.com" target="blank_">LittlefootCMS</a>
 						</span>
 					<div>
 				</div>
