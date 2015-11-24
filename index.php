@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="%skinbase%/css/custom.css" />
 	</head>
 	<body>
-		<header class="banner blue light text-center">
+    <!-- <header class="banner blue light text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-3"></div>
@@ -24,7 +24,7 @@
 					<div class="col-3"></div>
 				</div>
 			</div>
-		</header>
+		</header> -->
 		<div class="wrapper light_bb">
 			<div class="container">
 				<nav class="main_nav blue_a">
@@ -42,7 +42,7 @@
 				<div class="row">
 					<div class="col-12">
 						<span>
-							Powered by &copy<a href="http://littlefootcms.com" target="_blank">LittlefootCMS</a>
+							Powered by <sub>&copy</sub><a href="http://littlefootcms.com" target="_blank">LittlefootCMS</a>
 						</span>
 					<div>
 				</div>
