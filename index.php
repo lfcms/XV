@@ -30,6 +30,18 @@
 				<nav class="main_nav blue_a">
 					%nav%
 				</nav>
+                <nav class="mobile_nav">
+                    <input type="checkbox" id="mobile-nav" name="mobile-nav" class="dropdown" />
+    				<label for="mobile-nav">
+                        <span class="open-content pull-left blue_fg martop marbot"><i class="fa fa-bars"></i></i></span>
+        				<span class="close-content pull-left red_fg martop marbot"><i class="fa fa-bars"></i></span>
+						<div class="drop-content clear">
+    					    <nav class="blue_a">
+                                %nav%
+                            </nav>
+						</div>
+					</label>
+                </nav>
 			</div>
 		</div>
 		<div class="wrapper">
