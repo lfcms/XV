@@ -4,9 +4,9 @@
     	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=1" name="viewport">
-		<title>%title%</title>
+		<title><?=$this->lf->getTitle();?></title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="%skinbase%/css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$this->lf->getSkinBase();?>/css/custom.css" />
 	</head>
 	<body>
     <!-- <header class="banner blue light text-center">
@@ -28,7 +28,7 @@
 		<div class="wrapper light_bb">
 			<div class="container">
 				<nav class="main_nav blue_a">
-					%nav%
+					<?=$this->lf->printContent('nav');?>
 				</nav>
                 <nav class="mobile_nav">
                     <input type="checkbox" id="mobile-nav" name="mobile-nav" class="dropdown" />
@@ -37,7 +37,7 @@
         				<span class="close-content pull-left red_fg martop marbot"><i class="fa fa-bars"></i></span>
 						<div class="drop-content clear">
     					    <nav class="blue_a">
-                                %nav%
+								<?=$this->lf->printContent('nav');?>
                             </nav>
 						</div>
 					</label>
@@ -46,7 +46,7 @@
 		</div>
 		<div class="wrapper">
 			<div class="container">
-				%content%
+				<?=$this->lf->printContent('content');?>
 			</div>
 		</div>
 		<footer>
