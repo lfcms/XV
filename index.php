@@ -4,9 +4,9 @@
     	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=1" name="viewport">
-		<title><?=(new \lf\request)->get('pageTitle');?></title>
+		<title><?=$this->getTitle();?></title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="<?=$this->getSkinBase();?>/css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$this->getSkinBase();?>css/custom.css" />
 	</head>
 	<body>
     <!-- <header class="banner blue light text-center">
