@@ -4,9 +4,9 @@
     	<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=1" name="viewport">
-		<title><?=$this->lf->getTitle();?></title>
+		<title><?=$this->getTitle();?></title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="<?=$this->lf->getSkinBase();?>/css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$this->getSkinBase();?>/css/custom.css" />
 	</head>
 	<body>
         <div class="container">
@@ -17,7 +17,7 @@
             		<span class="close-content pull-left red_fg martop marbot"><i class="fa fa-bars"></i></span>
     				<div class="drop-content clear">
         				<nav class="blue_a">
-                            <?=$this->lf->printContent('nav');?>
+                            <?=$this->printContent('nav');?>
                         </nav>
     				</div>
     			</label>
@@ -30,8 +30,8 @@
 					<div class="col-6">
                         <h1 class="no_mar">
                             <span class="hidden">Littlefoot</span>
-                            <a href="<?=$this->wwwInstall;?>">
-                                <img src="<?=$this->wwwInstall;?>lf/system/template/images/lf-banner.png"/>
+                            <a href="<?=\lf\requestGet('IndexUrl');?>">
+                                <img src="<?=\lf\requestGet('LfUrl');?>system/template/images/lf-banner.png"/>
                             </a>
                         </h1>
 					</div>
@@ -42,13 +42,13 @@
 		<div class="wrapper light_bb">
 			<div class="container">
 				<nav class="main_nav blue_a">
-					<?=$this->lf->printContent('nav');?>
+					<?=$this->printContent('nav');?>
 				</nav>
 			</div>
 		</div>
 		<div class="wrapper">
 			<div class="container">
-				<?=$this->lf->printContent('content');?>
+				<?=$this->printContent('content');?>
 			</div>
 		</div>
 		<footer>
